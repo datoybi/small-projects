@@ -18,7 +18,7 @@ function dragElement(e) {
   function elementDrag(e) {
     e = e || window.event;
     e.preventDefault();
-    // calculate the new cursor position:
+    // calculate the new cursor position:    
     pos1 = pos3 - e.clientX;
     pos2 = pos4 - e.clientY;
     pos3 = e.clientX;
@@ -31,8 +31,11 @@ function dragElement(e) {
     
     // 오른쪽에 찍을때 left + width , top + height / 2      // 100, 525
     // 왼쪽에 찍을때  left, top + height / 2                // 0, 525
-    console.log(`점 찍을 곳 오른쪽 (${divX+ 100}, ${divY + 50 / 2})`)
-    console.log(`점 찍을 곳 왼쪽(${divX}, ${divY + 50 / 2})`)
+
+    console.log('divX : ' + divX, + " , divY : " + divY);
+
+    // console.log(`점 찍을 곳 오른쪽 (${divX + 100}, ${divY + 50 / 2})`)
+    // console.log(`점 찍을 곳 왼쪽(${divX}, ${divY + 50 / 2})`)
   }
 
   function closeDragElement() {
@@ -58,7 +61,7 @@ window.onload = function() {
     let x = event.clientX;
     let y = event.clientY;
     
-    console.log(`(${x}, ${y})`);
+    console.log(`마우스 클릭 좌표 (${x}, ${y})`);
     // left 0, top 500
     // left + width , top + height / 2 
     // 100, 525
