@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./diagram.css">  
     <script type="text/javascript" src="../jquery.min.js"></script>
     <script type="text/javascript" src="./diagram.js"></script>
-    <script type="text/javascript" src="./jointer.min.js"></script>
     <title>Document</title>
     <style>
         .aa {
@@ -28,9 +27,10 @@
 <body>
     <!-- <div class="aa"></div> -->
     <div id="createBox" onclick="createBox()">박스 생성</div><br>
-    <div id="createLine" onclick="createLine()">선 생성</div><br>
+    <div id="createLine" onclick="lineElement()">선 생성</div><br>
     <div class="mydiv" id="mydiv1" onmousedown="dragElement(event)">A</div>
     <div class="mydiv" id="mydiv2" onmousedown="dragElement(event)">B</div>
+    <line class="line" x1="0" y1="50" x2="500" y2="450" style="stroke:rgb(30, 173, 222);stroke-width:1" />
 
 </body>
 </html>
