@@ -16,6 +16,7 @@
         }
         svg {
             border: 1px solid black;
+            position: absolute;
         }
         .bb {
             width: 500px;
@@ -27,13 +28,16 @@
 <body>
 
     <div id="createBox" onclick="createBox()">박스 생성</div><br>
-    <div id="createLine" onclick="lineElement()">선 생성</div><br>
-    <div class="mydiv" id="mydiv1" onmousedown="dragElement(event)">A</div>
-    <div class="mydiv" id="mydiv2" onmousedown="dragElement(event)">B</div>
-    <svg height="500" width="500">
-
+    <div id="createLine" onclick="createLine()">선 생성</div><br>
+    <!-- <svg height="500" width="500">
         <line class="line" x1="0" y1="0" x2="150" y2="150" style="stroke:rgb(30, 173, 222);stroke-width:1" />
     </svg>
+    <svg height="500" width="500">
+        <line class="line" x1="50" y1="135" x2="452" y2="537" style="stroke:rgb(30, 173, 222);stroke-width:1" />
+    </svg>
+     -->
+        <div class="mydiv" id="mydiv1" onmousedown="dragElement(event)">A</div>
+        <div class="mydiv" id="mydiv2" onmousedown="dragElement(event)">B</div>
 
 </body>
 </html>

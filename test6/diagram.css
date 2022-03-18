@@ -1,0 +1,40 @@
+* {
+  margin : 0;
+}
+
+.mydiv {
+    position: absolute;
+    z-index: 9;
+    background-color: #2196F3;
+    color: #FFFFFF;
+    text-align: center;
+    width : 100px;
+    height: 100px;
+    cursor: pointer;
+  }
+
+ul {
+  display: flex;
+}
+
+li {
+  cursor: pointer;
+  list-style: none;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #2196f33b;
+  margin: 0px 10px;
+}
+
+#canvas {
+  width: 800px;
+  height: 800px;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+.line_clicked {
+  background-color: white;
+  border: 2px solid rgb(33, 150, 243);
+  color: rgb(0, 0, 0);
+} 
