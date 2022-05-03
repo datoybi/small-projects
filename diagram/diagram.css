@@ -30,7 +30,7 @@ li {
   width: 800px;
   height: 800px;
   border: 1px solid black;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .line_clicked {
